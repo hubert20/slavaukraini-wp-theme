@@ -1,0 +1,123 @@
+// Top Menu
+#top-header {
+    margin-top: 20px;
+}
+
+.navbar-brand {
+    &.top-logo {
+        img {
+            width: 130px;
+        }
+    }
+}
+
+#top-header {
+    .navbar-nav {
+        > li {
+            > a {
+                color: #1e2125;
+                padding: 0.5rem 0.7rem;
+                margin: 0 10px;
+                font-size: 1rem;
+                font-weight: 600;
+                &:hover {
+                    color: $brown-brand;
+                }
+            }
+            &.current_page_item {
+                > a {
+                    color: #1e2125;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.navbar-nav {
+    .dropdown {
+        .dropdown-toggle {
+            position: relative;
+            &:after {
+                border-right: none;
+                border-left: none;
+                border-top: none;
+                content: "\f107";
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                position: absolute;
+                top: 3px;
+                @include media-breakpoint-up(xl) {
+                    top: 8px;
+                }
+                transition: 0.5s;
+            }
+            &.show {
+                &:after {
+                    transition: 0.5s;
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+    }
+}
+
+.dropdown-menu {
+    background: #fff;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+    min-width: 13rem;
+    border: none;
+    .menu-item {
+        border-bottom: 1px solid #f1f1f1;
+        &:last-child {
+            border: none;
+        }
+    }
+    .dropdown-item {
+        padding: 1rem 1rem 1rem 1.5rem;
+        font-weight: 500;
+        &:before {
+            font-family: FontAwesome;
+            content: "\f105";
+            font-style: normal;
+            font-weight: normal;
+            position: absolute;
+            left: 12px;
+            color: #c5c5c5;
+        }
+        &:hover {
+            background-color: $brown-brand;
+            color: #fff;
+        }
+        &.active {
+            background-color: $brown-brand;
+            color: #fff;
+        }
+    }
+}
+
+// Category top
+.page-header-top {
+    height: 430px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/wp-content/uploads/2022/02/bg.jpg");
+    &__title {
+    }
+    &.page-header-top-kielbasy {
+        background-image: url("/wp-content/uploads/2022/02/bg.jpg");
+    }
+}
+
+// Footer-widget
+.footer-widgets {
+    background-color: #131212;
+}
+
+.site-footer {
+    background-color: #000000;
+}
