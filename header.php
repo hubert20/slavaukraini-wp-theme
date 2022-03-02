@@ -29,13 +29,13 @@
     </div>
     <header id="top-header" class="fixed-top" role="banner">
         <div class="container bg-white">
-            <nav class="navbar navbar-expand-md navbar-theme">
+            <nav id="navbar-example2" class="navbar navbar-expand-md navbar-theme">
                 <?php if (get_theme_mod('slavaukraini_wp_theme_logo')) : ?>
                     <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>" class="navbar-brand align-items-center top-logo">
                         <img src="<?php echo esc_url(get_theme_mod('slavaukraini_wp_theme_logo')); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>">
                     </a>
                 <?php endif; ?>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-md-center" id="main-menu">

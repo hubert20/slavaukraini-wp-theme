@@ -14,7 +14,7 @@ function wp_slavaukraini_scripts()
   wp_enqueue_style('wp-slavaukraini-css', get_template_directory_uri() . '/dist/style.css', array(), $ver_num, 'all');
   wp_enqueue_style( 'font-awesome-4', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), null );
   wp_enqueue_script('jquery');
-  wp_enqueue_script('my_javascript_file', get_template_directory_uri() . '/dist/main.bundle.js', array('jquery'), $ver_num);
+  wp_enqueue_script('wp-slavaukraini-mainjs', get_template_directory_uri() . '/dist/main.bundle.js', '', '', true);
 }
 add_action('wp_enqueue_scripts', 'wp_slavaukraini_scripts');
 
