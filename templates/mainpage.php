@@ -18,23 +18,6 @@ get_header();
 <!-- Main hero -->
 <?php get_template_part('template-parts/main-hero'); ?>
 
-
-<section id="organizacje" data-bs-spy="scroll" data-bs-target="#organizacje" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-
-    dcxsdcdcdfev
-    ververve
-    ververveverv
-    ervs
-    erv
-    erver
-    version_compareverv
-    erv
-    erve
-    rver
-    version_comparev
-
-</section>
-
 <section data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
     <div id="organizacje" style="height: 900px;">
@@ -55,6 +38,46 @@ get_header();
     </div>
 
     <div id="wolontariusze" style="height: 900px;">
+        csdcsdcsd
+        csdcsdcsdcsdc
+        sdc
+        sdcsd
+        cal_days_in_monthcsd
+        cal_days_in_monthcsdcsd
+        csd
+    </div>
+
+    <div id="firmy" style="height: 900px;">
+        csdcsdcsd
+        csdcsdcsdcsdc
+        sdc
+        sdcsd
+        cal_days_in_monthcsd
+        cal_days_in_monthcsdcsd
+        csd
+    </div>
+
+    <div id="zglaszam-problem" style="height: 900px;">
+        csdcsdcsd
+        csdcsdcsdcsdc
+        sdc
+        sdcsd
+        cal_days_in_monthcsd
+        cal_days_in_monthcsdcsd
+        csd
+    </div>
+
+    <div id="faq" style="height: 900px;">
+        csdcsdcsd
+        csdcsdcsdcsdc
+        sdc
+        sdcsd
+        cal_days_in_monthcsd
+        cal_days_in_monthcsdcsd
+        csd
+    </div>
+
+    <div id="kontakt" style="height: 900px;">
         csdcsdcsd
         csdcsdcsdcsdc
         sdc

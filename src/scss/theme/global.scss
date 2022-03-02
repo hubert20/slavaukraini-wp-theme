@@ -1,8 +1,4 @@
 // Top Menu
-#top-header {
-    margin-top: 20px;
-}
-
 .navbar-brand {
     &.top-logo {
         img {
@@ -97,27 +93,4 @@
             color: #fff;
         }
     }
-}
-
-// Category top
-.page-header-top {
-    height: 430px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("/wp-content/uploads/2022/02/bg.jpg");
-    &__title {
-    }
-    &.page-header-top-kielbasy {
-        background-image: url("/wp-content/uploads/2022/02/bg.jpg");
-    }
-}
-
-// Footer-widget
-.footer-widgets {
-    background-color: #131212;
-}
-
-.site-footer {
-    background-color: #000000;
 }
