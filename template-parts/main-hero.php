@@ -7,7 +7,9 @@ $hero_cnt = get_field('hero_cnt');
 
 <!-- Top hero -->
 <section class="top-hero">
-    <?php echo $hero_cnt; ?>
+    <div class="top-hero__cnt d-flex align-items-center justify-content-center">
+        <?php echo $hero_cnt; ?>
+    </div>
 </section>
 
 <!-- Style hero -->
@@ -15,6 +17,7 @@ $hero_cnt = get_field('hero_cnt');
     .top-hero {
         background-image: url('<?php echo $hero_background_mobile; ?>');
     }
+
     @media screen and (min-width: 992px) {
         .top-hero {
             background-image: url('<?php echo $hero_background_desktop; ?>');

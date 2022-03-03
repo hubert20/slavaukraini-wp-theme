@@ -13,4 +13,11 @@ jQuery(function ($) {
     if (nIndex === -1) {
         $("#cookie-warn").show();
     }
+    // Open form with cat
+    $('.btn-cat-form').on('click', function (e) {
+        e.preventDefault();
+        var cat = $(this).data('categoryType');
+        $('#modal-form .modal-form-cnt').hide();
+        $('#modal-form .modal-form-cnt[data-category-type="' + cat + '"]').show();
+    });
 });

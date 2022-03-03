@@ -22,11 +22,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div class="top-static">
-        <div class="container">
-
-        </div>
-    </div>
     <header id="top-header" class="fixed-top" role="banner">
         <div class="container bg-white">
             <nav id="navbar-example2" class="navbar navbar-expand-md navbar-theme">

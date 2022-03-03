@@ -17,7 +17,7 @@
                 font-size: 1rem;
                 font-weight: 600;
                 &:hover {
-                    color: $brown-brand;
+                    color: $blue;
                 }
             }
             &.current_page_item {
@@ -85,12 +85,37 @@
             color: #c5c5c5;
         }
         &:hover {
-            background-color: $brown-brand;
+            background-color: $blue;
             color: #fff;
         }
         &.active {
-            background-color: $brown-brand;
+            background-color: $blue;
             color: #fff;
         }
+    }
+}
+
+// Btns
+
+.btn-yellow {
+    @extend .btn;
+    background: $yellow;
+    color: $blue !important;
+    &:hover,
+    &:focus {
+        color: $yellow !important;
+        background: $blue;
+    }
+}
+
+.btn-blue,
+.wpcf7-submit {
+    @extend .btn;
+    background: $blue;
+    color: $yellow !important;
+    &:hover,
+    &:focus {
+        color: $blue !important;
+        background: $yellow;
     }
 }
