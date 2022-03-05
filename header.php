@@ -22,6 +22,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php /*
     <header id="top-header" class="fixed-top" role="banner">
         <div class="container bg-white">
             <nav id="navbar-example2" class="navbar navbar-expand-md navbar-theme">
@@ -49,3 +50,4 @@
             </nav>
         </div>
     </header>
+    */ ?>

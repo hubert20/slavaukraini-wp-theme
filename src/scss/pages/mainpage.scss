@@ -1,8 +1,55 @@
 // Top Hero
 .top-hero {
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
+    position: relative;
+
+    &__logo-szp {
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include media-breakpoint-down(xxl) {
+            img {
+                height: 400px;
+            }
+        }
+        @include media-breakpoint-down(xl) {
+            img {
+                height: 300px;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            img {
+                height: 140px;
+            }
+        }
+    }
+    &__logo-ap {
+        position: absolute;
+        right: 0;
+        top: 0;
+        @include media-breakpoint-down(xxl) {
+            img {
+                height: 400px;
+            }
+        }
+        @include media-breakpoint-down(xl) {
+            img {
+                height: 300px;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            img {
+                height: 140px;
+            }
+        }
+    }
+    &__cnt {
+        @media screen and (min-width: 1900px) {
+            padding-bottom: 50px;
+        }
+    }
 }
 
 @include media-breakpoint-up(lg) {
@@ -14,9 +61,46 @@
     }
 }
 
+@include media-breakpoint-down(lg) {
+    .top-hero {
+        padding-top: 10rem;
+        background-size: contain;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .top-hero {
+        padding-top: 8rem;
+        background-size: contain;
+    }
+}
+
 // Modal form
 .modal-body {
     .modal-form-cnt {
         display: none;
+    }
+}
+
+// Box łączymy
+.box-laczymy {
+    &__link {
+        background: #fff;
+        box-shadow: 0 0 17px #e0dede;
+        &:hover {
+            box-shadow: 0 0 23px #d5d5d5;
+        }
+    }
+}
+
+//faq
+.pit-faq-box {
+    &__item {
+        border-radius: 16px;
+        box-shadow: 0 0 12px #dfdfdf;
+    }
+    &__p[aria-expanded="true"] {
+        font-weight: bold;
+        color: $blue;
     }
 }

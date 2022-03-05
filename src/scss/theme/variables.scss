@@ -5,11 +5,11 @@
 $yellow: #f0cc06;
 $red: #e21f27;
 $blue: #1e74eb;
-$gray-light: #fafafa;
+$gray-light: #f8f8f8;
+$gray-dark: #999999;
 
-
-$names: (red, yellow, blue, gray-light);
-$colors: ($red, $yellow, $blue, $gray-light );
+$names: (red, yellow, blue, gray-light, gray-dark);
+$colors: ($red, $yellow, $blue, $gray-light, $gray-dark);
 
 @each $name in $names {
     $i: index($names, $name);

@@ -95,8 +95,7 @@
     }
 }
 
-// Btns
-
+// Btns & forms
 .btn-yellow {
     @extend .btn;
     background: $yellow;
@@ -108,8 +107,19 @@
     }
 }
 
-.btn-blue,
+.btn-red,
 .wpcf7-submit {
+    @extend .btn;
+    background: $red;
+    color: #fff !important;
+    &:hover,
+    &:focus {
+        color: $red !important;
+        background: #fff;
+    }
+}
+
+.btn-blue {
     @extend .btn;
     background: $blue;
     color: $yellow !important;
@@ -117,5 +127,50 @@
     &:focus {
         color: $blue !important;
         background: $yellow;
+    }
+}
+
+.form-control-yellow {
+    @extend .form-control;
+    border: 1px solid $yellow !important;
+}
+
+.btn-radius-more {
+    border-radius: 35px;
+}
+
+//Qookis
+.cookie-warn {
+    box-sizing: border-box;
+    z-index: 99999;
+    overflow: hidden;
+    color: #444;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    display: none;
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    &__left-side {
+        font-size: 12px;
+    }
+    &__right-side {
+        font-size: 14px;
+    }
+    &__close-cookie-info {
+        background: #e21927;
+        color: #fff;
+        border: 0;
+        padding: 6px 9px;
+        border-radius: 3px;
+        margin: 0 0 0 20px;
+        text-decoration: none !important;
     }
 }

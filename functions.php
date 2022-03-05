@@ -12,7 +12,7 @@ function wp_slavaukraini_scripts()
   global $ver_num;
   $ver_num = mt_rand();
   wp_enqueue_style('wp-slavaukraini-css', get_template_directory_uri() . '/dist/style.css', array(), $ver_num, 'all');
-  wp_enqueue_style( 'font-awesome-4', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), null );
+  wp_enqueue_style('font-awesome-4', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), null);
   wp_enqueue_script('jquery');
   wp_enqueue_script('wp-slavaukraini-mainjs', get_template_directory_uri() . '/dist/main.bundle.js', '', '', true);
 }
@@ -139,10 +139,40 @@ add_filter('get_the_archive_title', function ($title) {
 });
 
 // Ccrossorigin Font-awsome 5
-function add_font_awesome_4_cdn_attributes( $html, $handle ) {
-  if ( 'font-awesome-4' === $handle ) {
-      return str_replace( "media='all'", "media='all' integrity='sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=' crossorigin='anonymous'", $html );
+function add_font_awesome_4_cdn_attributes($html, $handle)
+{
+  if ('font-awesome-4' === $handle) {
+    return str_replace("media='all'", "media='all' integrity='sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=' crossorigin='anonymous'", $html);
   }
   return $html;
 }
-add_filter( 'style_loader_tag', 'add_font_awesome_4_cdn_attributes', 10, 2 );
+add_filter('style_loader_tag', 'add_font_awesome_4_cdn_attributes', 10, 2);
+
+/**
+ * Register widget area.
+ *
+ * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
+ */
+
+function wp_slavaukraini_widgets_init()
+{
+  register_sidebar(array(
+    'name'          => esc_html__('Stopka', 'slavaukraini-wp-theme'),
+    'id'            => 'stopka',
+    'description'   => esc_html__('Add widgets here.', 'slavaukraini-wp-theme'),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '',
+    'after_title'   => '',
+  ));
+  register_sidebar(array(
+    'name'          => esc_html__('Back to top', 'slavaukraini-wp-theme'),
+    'id'            => 'back-to-top',
+    'description'   => esc_html__('Add widgets here.', 'slavaukraini-wp-theme'),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '',
+    'after_title'   => '',
+  ));
+}
+add_action('widgets_init', 'wp_slavaukraini_widgets_init');
