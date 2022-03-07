@@ -81,7 +81,7 @@ $kontakt_cnt = get_field('kontakt_cnt');
     </div>
 
     <!-- FAQ -->
-    <div id="faq" class="faq container pb-4 py-lg-5">
+    <div id="faq" class="faq container py-4 py-lg-5">
         <h2 class="text-center fw-bold mb-4">Najczęściej zadawane pytania (FAQ)</h2>
         <?php if (have_rows('faq_kategorie_pytan')) : ?>
             <?php $counter_faq_row = 0; ?>
