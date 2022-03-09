@@ -26,6 +26,10 @@ $banner_rzadowy_cnt = get_field('banner_rzadowy_cnt');
 // Kontakt
 $kontakt_cnt = get_field('kontakt_cnt');
 
+// Box wpłacam
+$wplacam_background = get_field('wplacam_background');
+$wplacam_cnt = get_field('wplacam_cnt');
+
 ?>
 
 <!-- Main hero -->
@@ -65,6 +69,13 @@ $kontakt_cnt = get_field('kontakt_cnt');
     <div class="baner-rzadowy bg-gray-light py-4 py-lg-5" id="sekcja-rzadowa">
         <div class="container">
             <?php echo $banner_rzadowy_cnt; ?>
+        </div>
+    </div>
+
+    <!-- Box wpłacam -->
+    <div id="box-wplacam" class="box-wplacam py-4 py-lg-5 d-none" style="background-image: url('<?php echo $wplacam_background; ?>');">
+        <div class="container">
+            <?php echo $wplacam_cnt; ?>
         </div>
     </div>
 
