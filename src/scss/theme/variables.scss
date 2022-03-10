@@ -21,4 +21,9 @@ $colors: ($red, $yellow, $blue, $gray-light, $gray-dark);
     .text-#{$name} {
         color: nth($colors, $i);
     }
+
+    .btn-#{$name} {
+        @extend .btn;
+        background-color: nth($colors, $i);
+    }
 }

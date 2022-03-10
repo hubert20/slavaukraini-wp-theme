@@ -73,14 +73,14 @@ $wplacam_cnt = get_field('wplacam_cnt');
     </div>
 
     <!-- Box wpłacam -->
-    <div id="box-wplacam" class="box-wplacam py-4 py-lg-5 d-none" style="background-image: url('<?php echo $wplacam_background; ?>');">
+    <div id="box-wplacam" class="box-wplacam py-4 py-lg-5" style="background-image: url('<?php echo $wplacam_background; ?>');">
         <div class="container">
             <?php echo $wplacam_cnt; ?>
         </div>
     </div>
 
     <!-- Kontakt - pomagamy -->
-    <div id="kontakt" class="pb-4 py-lg-5 container">
+    <div id="kontakt" class="py-4 py-lg-5 container">
         <?php echo $kontakt_cnt; ?>
     </div>
 
